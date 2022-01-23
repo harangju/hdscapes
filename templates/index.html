@@ -5,17 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
-
-    <title>HDScapes</title>
-
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
-
-    <!-- Bootstrap core CSS -->
     <link href="static/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="static/cover.css" rel="stylesheet">
+    <title>Scapes in HD</title>
   </head>
 
   <body class="text-center">
@@ -24,7 +18,7 @@
 
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">HDScapes</h3>
+          <h3 class="masthead-brand">Scapes in HD</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="https://punkscape.xyz/" target="_blank">Punkscapes</a>
           </nav>
@@ -32,45 +26,47 @@
       </header>
 
       <main role="main" class="inner cover">
+
         <div class="row mb-4">
           <div class="col">
             <h1 class="cover-heading">Get your punkscape in HD</h1>
+            <p class="lead">Go from 72x24 to any size.</p>
           </div>
         </div>
 
         <div class="row mb-5">
           <div class="col">
-            <img class="img-fluid z-depth-2 rounded" src="{{ url_for('static', filename='img/punkscape3313.png') }}">
+            <img class="img-fluid z-depth-2 rounded full-width" src="{{ url_for('static', filename='img/punkscape3313.png') }}" id="scape">
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <label for="scapeID">Punkscape ID</label>
-            <input type="text" class="form-control" id="scapeID" placeholder="" value="" required="">
+            <input type="text" class="form-control" id="scapeID" placeholder="3313" value="" required="">
             <div class="invalid-feedback">
               Valid Punkscape ID is required.
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <label for="width">Width</label>
-            <input type="text" class="form-control" id="width" placeholder="" value="" required="">
+            <input type="text" class="form-control" id="width" placeholder="4320" value="" required="">
             <div class="invalid-feedback">
               Valid width is required.
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <!-- <div class="col-md-4 mb-3">
             <label for="height">Height</label>
-            <input type="text" class="form-control" id="height" placeholder="" value="" required="">
+            <input type="text" class="form-control" id="height" placeholder="" value="1440" required="">
             <div class="invalid-feedback">
               Valid height is required.
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
         </div>
 
         <div class="row mt-2">
           <div class="col">
-            <button class="btn btn-block" type="submit">Get scape</button>
+            <button class="btn btn-block" type="submit" id="get-scape">Get scape</button>
           </div>
         </div>
 
@@ -81,8 +77,8 @@
           by <a href="https://twitter.com/axieperson">@axieperson</a></p>
         </div>
       </footer>
-    </div>
 
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -91,6 +87,7 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="static/popper.min.js"></script>
     <script src="static/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
 
-
-</body></html>
+</body>
+</html>
