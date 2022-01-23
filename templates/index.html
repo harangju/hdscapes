@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>HDScapes</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-60 p-2 mx-auto flex-column">
+
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">HDScapes</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="https://punkscape.xyz/" target="_blank">Punkscapes</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <div class="row mb-4">
+          <div class="col">
+            <h1 class="cover-heading">Get your punkscape in HD</h1>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col">
+            <img class="img-fluid z-depth-2 rounded" src="{{ url_for('static', filename='img/punkscape3313.png') }}">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="scapeID">Punkscape ID</label>
+            <input type="text" class="form-control" id="scapeID" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid Punkscape ID is required.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="width">Width</label>
+            <input type="text" class="form-control" id="width" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid width is required.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="height">Height</label>
+            <input type="text" class="form-control" id="height" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid height is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col">
+            <button class="btn btn-block" type="submit">Get scape</button>
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          by <a href="https://twitter.com/axieperson">@axieperson</a></p>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="static/popper.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+
+
+</body></html>
